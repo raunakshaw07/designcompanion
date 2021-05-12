@@ -1,0 +1,369 @@
+.contact {
+  height: 100vh;
+  width: 100%;
+  background-color: #242424;
+  color: #ffffff;
+}
+
+.contact > .section1 {
+  height: 70%;
+  width: 100%;
+  background: url("../../images/contact.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contact > .section1 > .header > .logo {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4rem;
+  height: 6vh;
+  z-index: 3;
+}
+
+.contact > .section1 > .header > .logo > a {
+  color: #ffffff;
+  text-decoration: none;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.contact > .section1 > h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+}
+
+.contact > .section1 > .form {
+  background-color: #e6e6e6;
+  color: #242424;
+}
+
+.contact > .section1 > .form > form {
+  margin: 2rem;
+}
+.contact > .section1 > .form > form > .grid-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.contact > .section1 > .form > form > .grid-box > .grid > input {
+  outline: none;
+  margin: 1rem 0;
+  border: none;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #242424;
+}
+.contact > .section1 > .form > form > select {
+  outline: none;
+  margin: 1rem 0;
+  border: none;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #242424;
+}
+.contact > .section1 > .form > form > textarea {
+  height: 5rem;
+  width: 100%;
+  margin: 1rem 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #242424;
+}
+.contact > .section1 > .form > form > .button > button {
+  padding: 0.7rem 1.6rem;
+  outline: none;
+  color: #ffffff;
+  background: #242424;
+  border: none;
+  border-radius: 99px;
+}
+.contact > .section2 {
+  padding-left: 4rem;
+}
+
+.contact > .section2 > .info {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 44%;
+  grid-gap: 4rem;
+}
+
+.contact > .section2 > .social > a > i {
+  color: #242424;
+  background: #e6e6e6;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact > .section1 > h1 {
+    position: absolute;
+    bottom: 30%;
+    margin-left: 4rem;
+  }
+  .contact > .section1 > .form {
+    position: absolute;
+    top: 10%;
+    right: 8%;
+    height: 75%;
+    width: 38%;
+  }
+  .contact > .section2 > .social {
+    position: absolute;
+    right: 10%;
+    bottom: 4%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .contact > .section1 {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact > .section1 > h1 {
+    font-size: 2rem;
+  }
+  .contact > .section1 > .header {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .contact > .section1 > .header > .logo {
+    height: 3vh;
+  }
+  .contact > .section1 > .header > .logo > a > h3 {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  .contact > .section2 {
+    height: 40%;
+    background-color: #242424;
+  }
+  .contact > .section2 > .info {
+    width: 90%;
+    grid-gap: 2rem;
+    font-size: 0.7rem;
+  }
+
+  .contact > .section1 > .form {
+    width: 90%;
+  }
+  .contact > .section1 > .form > form {
+    margin: 1rem;
+  }
+  .contact > .section1 > .form > form > .grid-box {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .contact > .section1 > .form > form > .grid-box > .grid > label {
+    font-size: 0.7rem;
+  }
+  .contact > .section1 > .form > form > .grid-box > .grid > input {
+    margin: 1rem 0;
+    padding: 0.2rem 0;
+  }
+  .contact > .section1 > .form > form > label {
+    font-size: 0.7rem;
+  }
+  .contact > .section1 > .form > form > select {
+    margin: 1rem 0;
+    padding: 0.2rem 0;
+  }
+  .contact > .section1 > .form > form > textarea {
+    height: 3rem;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .contact > .section1 > .form > form > .button > button {
+    padding: 0.5rem 1rem;
+  }
+  .contact > .section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .contact > .section2 > .social {
+    font-size: 0.7rem;
+    margin: 2rem 0;
+  }
+  .contact > .section2 > .social > a > i {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .contact > .section2 > p {
+    font-size: 0.7rem;
+    margin: 0 1.5rem;
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 900px) {
+  .contact > .section1 {
+    height: 105%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact > .section1 > h1 {
+    font-size: 2rem;
+  }
+  .contact > .section1 > .header {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .contact > .section1 > .header > .logo {
+    height: 3vh;
+  }
+  .contact > .section1 > .header > .logo > a > h3 {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  .contact > .section1 > .form {
+    width: 80%;
+  }
+  .contact > .section1 > .form > form {
+    margin: 2rem;
+  }
+  .contact > .section1 > .form > form > .grid-box {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .contact > .section1 > .form > form > .grid-box > .grid > label {
+    font-size: 0.9rem;
+  }
+  .contact > .section1 > .form > form > .grid-box > .grid > input {
+    margin: 1rem 0;
+    padding: 0.2rem 0;
+  }
+  .contact > .section1 > .form > form > label {
+    font-size: 0.9rem;
+  }
+  .contact > .section1 > .form > form > select {
+    margin: 1rem 0;
+    padding: 0.2rem 0;
+  }
+  .contact > .section1 > .form > form > textarea {
+    height: 3rem;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .contact > .section1 > .form > form > .button > button {
+    padding: 0.5rem 1rem;
+  }
+  .contact > .section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40%;
+    background-color: #242424;
+  }
+  .contact > .section2 > .info {
+    width: 90%;
+    grid-gap: 2rem;
+    font-size: 0.9rem;
+    margin-left: auto;
+  }
+  .contact > .section2 > .social {
+    font-size: 0.9rem;
+    margin: 2rem 0;
+  }
+  .contact > .section2 > .social > a > i {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .contact > .section2 > p {
+    font-size: 0.9rem;
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1199px) {
+  .contact > .section1 {
+    height: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact > .section1 > h1 {
+    font-size: 2.4rem;
+  }
+  .contact > .section1 > .header {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .contact > .section1 > .header > .logo {
+    height: 3vh;
+  }
+  .contact > .section1 > .header > .logo > a > h3 {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  .contact > .section1 > .form {
+    width: 80%;
+  }
+  .contact > .section1 > .form > form {
+    margin: 2rem;
+  }
+  .contact > .section1 > .form > form > .grid-box {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .contact > .section1 > .form > form > .grid-box > .grid > label {
+    font-size: 0.9rem;
+  }
+  .contact > .section1 > .form > form > .grid-box > .grid > input {
+    margin: 1rem 0;
+    padding: 0.2rem 0;
+  }
+  .contact > .section1 > .form > form > label {
+    font-size: 0.9rem;
+  }
+  .contact > .section1 > .form > form > select {
+    margin: 1rem 0;
+    padding: 0.2rem 0;
+  }
+  .contact > .section1 > .form > form > textarea {
+    height: 3rem;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .contact > .section1 > .form > form > .button > button {
+    padding: 0.5rem 1rem;
+  }
+  .contact > .section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 45%;
+    background-color: #242424;
+  }
+  .contact > .section2 > .info {
+    width: 90%;
+    grid-gap: 2rem;
+    font-size: 1rem;
+    margin-left: auto;
+  }
+  .contact > .section2 > .social {
+    font-size: 1rem;
+    margin: 2rem 0;
+  }
+  .contact > .section2 > .social > a > i {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+  }
+  .contact > .section2 > p {
+    font-size: 1rem;
+    margin: 0 1rem;
+  }
+}

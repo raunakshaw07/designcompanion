@@ -1,0 +1,173 @@
+.work {
+  height: 120%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  /* padding-bottom: 10rem; */
+}
+.work > .header > .logo {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4rem;
+  height: 6vh;
+  z-index: 3;
+}
+
+.work > .header > .logo > a {
+  color: #ffffff;
+  text-decoration: none;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.work > .bg {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "column-1 column-2";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.work > .bg > .left {
+  background: #6d3737;
+  background: url("../../images/work-bg-project.jpg");
+  background-size: cover;
+  filter: blur(5px);
+  height: 100%;
+  width: 100%;
+  grid-area: column-1;
+}
+.work > .bg > .right {
+  /* background: #363636; */
+  background: url("../../images/work-out.jpg");
+  background-size: cover;
+  filter: blur(5px);
+  height: 100%;
+  width: 100%;
+  grid-area: column-2;
+  z-index: 3;
+}
+.work > .body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+.work > .body > .cards {
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  overflow: auto;
+  margin-bottom: 6rem;
+}
+.work > .body > .cards::-webkit-scrollbar {
+  display: none;
+}
+.work > .body > .cards > .card {
+  padding-bottom: 1rem;
+  background: #ffffff;
+  color: #000000;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+.work > .body > .cards > .card > img {
+  height: 80%;
+  width: 100%;
+}
+.work > .body > .cards > .card > .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+@media screen and (max-width: 540px) {
+  .work > .bg {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .work > .header > .logo {
+    margin-left: 2rem;
+    height: 3vh;
+  }
+  .work > .header > .logo > a > h3 {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  .work > .body > h1 {
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    text-shadow: 2px 2px #383838;
+  }
+  .work > .bg > .right {
+    width: 100%;
+    height: 70%;
+  }
+  .work > .bg > .left {
+    width: 100%;
+    height: 30%;
+  }
+  .work > .body > .cards {
+    width: 80%;
+    margin-top: 1rem;
+    grid-template-columns: 1fr;
+  }
+  .work > .body > .cards .card > .text > h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 900px) {
+  .work > .bg {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .work > .header > .logo {
+    margin-left: 2rem;
+    height: 3vh;
+  }
+  .work > .header > .logo > a > h3 {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+  }
+  .work > .body > h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  .work > .bg > .right {
+    width: 100%;
+    height: 70%;
+  }
+  .work > .bg > .left {
+    width: 100%;
+    height: 30%;
+  }
+  .work > .body > .cards {
+    width: 80%;
+    margin-top: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .work > .body > .cards .card > .text > h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1300px) {
+  .work > .body > .cards {
+    width: 80%;
+    margin-top: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .work > .bg > .left {
+    background-position: center;
+  }
+}

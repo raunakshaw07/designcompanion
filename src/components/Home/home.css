@@ -1,0 +1,130 @@
+.home {
+  height: 100vh;
+  width: 100%;
+  background: url("../../images/home-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: -1;
+  line-height: 0;
+  color: #ffffff;
+}
+
+.home > .overlay {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.home > .logo {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4rem;
+  height: 3vh;
+}
+
+.home > .logo > a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.home > .inner {
+  margin: 0;
+  padding: 0;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 10;
+  margin-left: 4rem;
+}
+
+.home > .inner > h1:nth-child(1) {
+  letter-spacing: 4px;
+}
+
+.home > .inner > h1:nth-child(2) {
+  font-size: 4rem;
+  letter-spacing: 10px;
+}
+
+.home > .inner > h3 {
+  margin-top: 8rem;
+}
+
+@media screen and (min-width: 901px) and (max-width: 1169px) {
+  .home > .inner > h1:nth-child(2) {
+    font-size: 4rem;
+    letter-spacing: 10px;
+  }
+  .home > .inner > h1:nth-child(1) {
+    letter-spacing: 4px;
+  }
+  .home > .logo {
+    margin-left: 4rem;
+    height: 3vh;
+  }
+  .home > .logo > h3 > i {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  .home > .inner > p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 900px) {
+  .home > .inner > h1:nth-child(2) {
+    font-size: 2.2rem;
+    letter-spacing: 10px;
+  }
+  .home > .inner {
+    margin-left: 3rem;
+  }
+  .home > .inner > h1:nth-child(1) {
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+  }
+  .home > .logo {
+    margin-left: 3rem;
+    height: 3vh;
+    font-size: 1rem;
+  }
+  .home > .logo > h3 > i {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+  }
+  .home > .inner > p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .home > .inner > h1:nth-child(2) {
+    font-size: 1.2rem;
+    letter-spacing: 10px;
+  }
+  .home > .inner {
+    margin-left: 2rem;
+  }
+  .home > .inner > h1:nth-child(1) {
+    font-size: 1rem;
+    letter-spacing: 4px;
+  }
+  .home > .logo {
+    margin-left: 2rem;
+    height: 3vh;
+  }
+  .home > .logo > h3 > i {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+  }
+  .home > .inner > h3 {
+    font-size: 0.8rem;
+  }
+  .home > .inner > p {
+    font-size: 0.6rem;
+  }
+}

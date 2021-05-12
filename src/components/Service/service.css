@@ -1,0 +1,249 @@
+.service {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+}
+.service > .header {
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: 2rem -25rem;
+  position: fixed;
+  z-index: 3;
+}
+
+.service > .header > .logo {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4rem;
+  height: 6vh;
+  z-index: 3;
+}
+
+.service > .header > .logo > a {
+  color: #ffffff;
+  text-decoration: none;
+  z-index: 3;
+  cursor: pointer;
+}
+.service > .left {
+  background: url("../../images/service-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(9px);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.service > .right {
+  height: 100%;
+  width: 30%;
+  background: url("../../images/work-bg-project.jpg");
+  background-size: cover;
+  filter: blur(5px);
+  position: absolute;
+  right: 0;
+}
+
+.service > .body {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  height: 94vh;
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service > .body > h1 {
+  font-size: 2.4rem;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+.service > .body > .inner {
+  width: 90%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+  grid-template-areas: "column-1 column-2";
+}
+
+.service > .body > .inner > .inner-left {
+  width: 100%;
+  height: 100%;
+  grid-area: column-1;
+}
+
+.service > .body > .inner > .inner-left > .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.service > .body > .inner > .inner-left > .cards > .card {
+  border: 1px solid #ffffff;
+  padding: 1rem;
+}
+
+.service > .body > .inner > .inner-left > .cards > .card > i {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #efb960;
+}
+
+.service > .body > .inner > .inner-right {
+  width: 100%;
+  height: 100%;
+  /* padding: 0 1rem; */
+  grid-area: column-2;
+}
+
+.service > .body > .inner > .inner-right > img {
+  height: 100%;
+  width: 90%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width: 540px) {
+  .service {
+    height: 170vh;
+  }
+  .service > .left {
+    width: 100%;
+    height: 125%;
+    bottom: 0;
+    position: relative;
+  }
+  .service > .right {
+    width: 100%;
+    height: 40%;
+    top: 0;
+  }
+  .service > .right::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background: rgba(0, 0, 0, 0.35);
+  }
+  .service > .header > .logo {
+    margin-left: 2rem;
+    height: 3vh;
+  }
+  .service > .header > .logo > a > h3 {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  .service > .body > h1 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+  .service > .body > .inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50%;
+    grid-template-areas: "column-2" "column-1";
+  }
+  .service > .body > .inner > .inner-left > .cards {
+    margin: 0 1rem;
+    grid-template-columns: 1fr;
+  }
+  .service > .body > .inner > .inner-left > .cards > .card > h2 {
+    font-size: 1.2rem;
+  }
+  .service > .body > .inner > .inner-left > .cards > .card > p {
+    font-size: 0.8rem;
+  }
+  .service > .body > .inner {
+    margin: 0 3rem;
+  }
+  .service > .body > .inner > .inner-right > img {
+    height: 90%;
+    width: 97%;
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 900px) {
+  .service {
+    height: 150vh;
+    width: 98%;
+  }
+  .service > .left {
+    width: 100%;
+    height: 125%;
+    left: 0;
+    bottom: 0;
+    position: relative;
+  }
+  .service > .right {
+    width: 97%;
+    height: 40%;
+    top: 0;
+    left: 0;
+  }
+  .service > .right::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background: rgba(0, 0, 0, 0.35);
+  }
+  .service > .header > .logo {
+    margin: 0 2rem;
+    width: 95%;
+    height: 3vh;
+  }
+  .service > .header > .logo > a > h3 {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  .service > .body > h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  .service > .body > .inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50%;
+    grid-template-areas: "column-2" "column-1";
+  }
+  .service > .body > .inner > .inner-left > .cards {
+    margin: 0 1rem;
+    grid-template-columns: 1fr;
+  }
+  .service > .body > .inner > .inner-left > .cards > .card > h2 {
+    font-size: 1.2rem;
+  }
+  .service > .body > .inner > .inner-left > .cards > .card > p {
+    font-size: 0.8rem;
+  }
+  .service > .body > .inner > .inner-right > img {
+    height: 90%;
+    width: 97%;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1300px) {
+  .service > .body > h1 {
+    font-size: 2rem;
+  }
+  .service > .body > .inner > .inner-left > .cards > .card > i {
+    font-size: 1.2rem;
+    -webkit-text-stroke-width: 1px;
+  }
+  .service > .body > .inner > .inner-left > .cards > .card {
+    padding: 0.5rem;
+  }
+  .service > .body > .inner > .inner-left > .cards > .card > h2 {
+    font-size: 1.4rem;
+  }
+  .service > .body > .inner > .inner-left > .cards > .card > p {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,111 @@
+import image1 from "../../images/work-project-3.png";
+import image2 from "../../images/work-project2.png";
+import image3 from "../../images/work-project1.png";
+import image4 from "../../images/work-bg-project.jpg";
+export const worklist = [
+  {
+    id: 1,
+    name: "Main Floor Renovation",
+    image: image1,
+    desc: "Main Floor Renovation",
+    imgUrl: "../../images/work-project-3.png",
+  },
+  {
+    id: 2,
+    name: "Hallway Renovation",
+    image: image2,
+    desc: "Hallway Renovation",
+    imgUrl: "../../images/work-project2.png",
+  },
+  {
+    id: 3,
+    name: "Outdoor Renovation",
+    image: image3,
+    desc: "Outdoor Renovation",
+    imgUrl: "../../images/work-project1.png",
+  },
+  {
+    id: 4,
+    name: "Kitchen Renovation",
+    image: image4,
+    desc: "Kitchen Renovation",
+    imgUrl: "../../images/work-bg-project.jpg",
+  },
+  {
+    id: 5,
+    name: "Main Floor Renovation",
+    image: image1,
+    desc: "Main Floor Renovation",
+    imgUrl: "../../images/work-project-3.png",
+  },
+  {
+    id: 6,
+    name: "Hallway Renovation",
+    image: image2,
+    desc: "Hallway Renovation",
+    imgUrl: "../../images/work-project2.png",
+  },
+  {
+    id: 7,
+    name: "Outdoor Renovation",
+    image: image3,
+    desc: "Outdoor Renovation",
+    imgUrl: "../../images/work-project1.png",
+  },
+  {
+    id: 8,
+    name: "Kitchen Renovation",
+    image: image4,
+    desc: "Kitchen Renovation",
+    imgUrl: "../../images/work-bg-project.jpg",
+  },
+  {
+    id: 9,
+    name: "Kitchen Renovation",
+    image: image4,
+    desc: "Kitchen Renovation",
+    imgUrl: "../../images/work-bg-project.jpg",
+  },
+  {
+    id: 10,
+    name: "Main Floor Renovation",
+    image: image1,
+    desc: "Main Floor Renovation",
+    imgUrl: "../../images/work-project-3.png",
+  },
+  {
+    id: 11,
+    name: "Hallway Renovation",
+    image: image2,
+    desc: "Hallway Renovation",
+    imgUrl: "../../images/work-project2.png",
+  },
+  {
+    id: 12,
+    name: "Outdoor Renovation",
+    image: image3,
+    desc: "Outdoor Renovation",
+    imgUrl: "../../images/work-project1.png",
+  },
+  {
+    id: 13,
+    name: "Main Floor Renovation",
+    image: image1,
+    desc: "Main Floor Renovation",
+    imgUrl: "../../images/work-project-3.png",
+  },
+  {
+    id: 14,
+    name: "Hallway Renovation",
+    image: image2,
+    desc: "Hallway Renovation",
+    imgUrl: "../../images/work-project2.png",
+  },
+  {
+    id: 15,
+    name: "Outdoor Renovation",
+    image: image3,
+    desc: "Outdoor Renovation",
+    imgUrl: "../../images/work-project1.png",
+  },
+];
